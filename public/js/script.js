@@ -8,7 +8,7 @@ if (navigator.geolocation) {
     (position) => {
       const { latitude, longitude } = position.coords;
       //emit location to server
-      socket.emit("send location", { latitude, longitude });
+      socket.emit("send-location", { latitude, longitude });
     },
     (error) => {
       console.error("Error getting location: ", error);
@@ -26,3 +26,18 @@ if (navigator.geolocation) {
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
 attribution:"Rajan Aryal"
 }).addTo(map)
+
+const markers={}
+
+//receive location from server and set view to location
+socket.on("receive-location",(data)=>{
+const{id,latitude,longitude}=data;
+map.setView([latitude,longitude],16);
+if(markers[id]){
+    markers[id].setLatLng([latitude,longitude])
+}
+else{
+  markers[id]=L.marker([latitude,longitude]).addTo(map).bindPopup(`User ID: ${id}`).openPopup()
+}
+
+})
