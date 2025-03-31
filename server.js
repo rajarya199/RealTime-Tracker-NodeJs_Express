@@ -15,6 +15,12 @@ io.on("connection",(socket)=>{
     socket.on("send-location",function(data){
         io.emit("receive-location",{id:socket.id,...data})
     })
+
+    //when user disconnect from server
+    socket.on("disconnect",function(){
+        io.emit("user-disconnected",{id:socket.id})
+        console.log("user disconnected")
+    })
 console.log(" user connected") 
 })
 
