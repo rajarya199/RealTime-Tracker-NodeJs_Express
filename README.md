@@ -15,5 +15,9 @@ The **Real time Location Tracker** is backend project web  built with **Node.js*
  **Socket.io**
   **Leaflet Map**
 
+  ## 🌍 Deployment
+The application is deployed and accessible online at:  
+🔗 **Live Demo:** [Click Here](https://realtime-tracker-6c5x.onrender.com)  
+
 
 
