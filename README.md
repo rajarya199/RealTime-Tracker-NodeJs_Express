@@ -20,4 +20,6 @@ The application is deployed and accessible online at:
 🔗 **Live Demo:** [Click Here](https://realtime-tracker-6c5x.onrender.com)  
 
 
+## 📧 Contact
+For inquiries, reach out to 📩 `aryalrajan078@gmail.com` or open an **issue** in the repository.
 
