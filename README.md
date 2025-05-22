@@ -1,4 +1,4 @@
-#  RealTime Location Tracker-NodeJs,ExpressJs,Leaflet Map
+#RealTime Location Tracker-NodeJs,ExpressJs,Leaflet Map
 
 ## 🌟 Overview
 The **Real time Location Tracker** is backend project web  built with **Node.js** and **Express Js**, enabling users's device to locate their place.Here it includes **Socket.io** with **Leaflet Map**,
@@ -13,7 +13,7 @@ The **Real time Location Tracker** is backend project web  built with **Node.js*
  **Next.js**
  **Ejs**
  **Socket.io**
-  **Leaflet Map**
+ **Leaflet Map**
 
   ## 🌍 Deployment
 The application is deployed and accessible online at:  
@@ -21,5 +21,5 @@ The application is deployed and accessible online at:
 
 
 ## 📧 Contact
-For inquiries, reach out to 📩 `aryalrajan078@gmail.com` or open an **issue** in the repository.
+For inquiries, reach out to 📩 `aryalrajan078@gmail.com` or open an **issue** in the repository .
 
